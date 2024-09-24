@@ -1,0 +1,164 @@
+/* Basic reset and font setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    height: 100vh; /* Ensures full screen height */
+    overflow: hidden; /* Prevents the body from scrolling */
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Image Section Styling */
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto; /* Add scrolling capability */
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.image-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Description Section Styling */
+.description-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+    overflow-y: auto; /* Allows vertical scrolling */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.description-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Segment Styling */
+.description_heading {
+    background-color: #c4e4ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.description_heading:hover {
+    background-color: #8ff0fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.description-heading {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Description Body Styling */
+.description_body {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-height: calc(100vh - 200px); /* Limit height, adjust as needed */
+    overflow-y: auto; /* Enables scrolling */
+    text-align: center; /* Center text alignment */
+}
+
+.description_body:hover {
+    background-color: #f0f4f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.description_body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Close Button Styling */
+.close-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.close-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .image-section,
+    .description-section {
+        margin: 10px;
+        height: auto;
+    }
+
+    .description_heading,
+    .description_body {
+        margin-bottom: 10px;
+    }
+}
