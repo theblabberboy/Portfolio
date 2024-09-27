@@ -300,21 +300,6 @@ a.active {
     color: #425BB5;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    header {
-        height: 120px; /* Increased height for mobile screens */
-    }
-    
-    nav ul {
-        padding: 10px; /* Optionally adjust padding */
-    }
-    
-    nav li {
-        margin: 5px; /* Optionally adjust margin if needed */
-    }
-}
-
 
 /* home section
 ==================================================*/
