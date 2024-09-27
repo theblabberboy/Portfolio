@@ -1,9 +1,9 @@
 // JavaScript Document
 
-window.addEventListener("load", function () {
+//window.addEventListener("load", function () {
     // Hides the preloader after the page fully loads
-    document.getElementById("preloader").style.display = "none";
-});
+//    document.getElementById("preloader").style.display = "none";
+//});
 
 
 $(document).ready(function () {
