@@ -1,7 +1,7 @@
 /*
 * Resume template
-* Created by : Ahmed Essa
-* website : www.ahmedessa.net
+* Created by : Rupam Kundu
+* website : www.rupamkundu.in
 */
 
 
@@ -43,12 +43,28 @@ h1 {
     color: #000000;
 }
 
-h4 {
+h6 {
     font-family: 'Georgia', serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
     color: #ade823;
+    margin-left: 8px; /*15px*/
+    font-weight: 1000;
+    font-size: 40px;
+    text-shadow: 
+        1px 1px 0 #000,  
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;
+}
+
+h4 {
+    font-family: 'Georgia', serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    color: #00c8ff;
     margin-left: 8px; /*15px*/
     font-weight: 1000;
     font-size: 40px;
@@ -399,7 +415,7 @@ a.active {
 }
 
 .education-row h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Garamond', serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     color: #425BB5;
@@ -459,7 +475,11 @@ a.active {
 
 .timeline-event-copy h3 {
     font-size: 1.75em;
+    font-family: 'Garamond', serif;
+    font-size: 15px;
+    font-weight: bold;
 }
+
 
 .timeline-event-copy h4 {
     font-size: 1.2em;
@@ -1002,7 +1022,7 @@ a.active {
 
 
 
-.close-popup-modal {
+/*.close-popup-modal {
     float: right;
     margin: 20px;
     font-size: 22px;
@@ -1012,9 +1032,25 @@ a.active {
     transition: all .3s;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
-    position: fixed;
+    position: sticky;
     z-index: 100000;
     right: 14px;
+}*/
+
+.close-popup-modal {
+    float: right;
+    position: sticky;  /* Use sticky positioning */
+    top: 20px;         /* Stick to the top */
+    right: 14px;       /* Align to the right */
+    margin: 20px;
+    font-size: 22px;
+    opacity: 1 !important;
+    cursor: pointer;
+    z-index: 100000;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
 }
 
 .animatedModal-on .close-popup-modal {
@@ -1162,6 +1198,7 @@ figcaption {
 }
 
 .section-title {
+    font-family: 'Garamond', serif;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -1170,7 +1207,7 @@ figcaption {
 
 .section-description {
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
 
@@ -1181,6 +1218,7 @@ figcaption {
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    font-family: 'Garamond', serif;
 }
 
 .award-box:hover {
@@ -1249,7 +1287,8 @@ figcaption {
 
 /* Close button */
 .close-awardModal {
-    position: absolute;
+    float: right;
+    position: sticky;
     top: 10px;
     right: 10px;
     font-size: 24px;
@@ -1294,7 +1333,7 @@ body {
 
 .award-box {
     padding: 20px;
-    border: 2px solid #ddd; /* Keeps the rounded border */
+    border: 2px solid #000000; /* Keeps the rounded border */
     border-radius: 12px; /* Round corners */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1312,6 +1351,149 @@ body {
 }
 
 
+/* extracurricular
+==================================================*/
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-family: 'Garamond', serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.extracurricular-box {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Garamond', serif; /* Garamond font for the text */
+}
+
+.extracurricular-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 10px 20px rgb(255, 23, 23); /* Cyan shadow around the entire box */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent; /* Slightly transparent black overlay */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+
+
+/* Title font styling */
+.extracurricular-title {
+    font-family: 'Garamond', serif; /* Garamond font */
+    font-size: 24px; /* Adjust the font size as per your preference */
+    color: #fff; /* White text color */
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.905); /*Optional text shadow for readability */
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    overflow: auto; /* Allow scrolling if the content exceeds the height */
+}
+
+/* Modal content box */
+.modal-content {
+    position: relative;
+    margin: 5% auto; /* Centered modal with top spacing */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    width: 80%; /* Set width */
+    max-width: 1200px; /* Limit the width for larger screens */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+/* Image styles */
+.modal-body img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Increase font size in modal body */
+.modal-body p {
+    font-size: 20px; /* Adjust this value as needed */
+    color: #333; /* Optional: Change text color */
+    line-height: 1.5; /* Optional: Adjust line height for better readability */
+}
+
+/* Header inside each modal */
+.modal-header h1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Close button */
+.close-extracurricularModal {
+    float: right;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.close-extracurricularModal:hover {
+    color: #000;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for the body */
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for titles */
+}
+
+.extracurricular-link {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for extracurricular links */
+}
 
 
 
@@ -1322,128 +1504,46 @@ body {
 ==================================================*/
 
 #contact {
-    padding: 100px 0;
-    background: #f3f3f3
+    padding: 0;
+    background: #eef3f7;
+    text-align: center; /* Centering all text content */
 }
 
-#contact-form input,
-#contact-form textarea {
-    height: 50px;
-    margin-bottom: 10px;
-    border-radius: 0;
+#contact h4 {
+    text-align: left; /* Aligns the number on the left */
 }
 
-#contact-form label {
-    display: block;
-    margin-bottom: .2em;
-    font-size: 13px;
-    line-height: 13px;
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-    color: #000;
+#contact h1 {
+    text-align: left; /* Aligns the title on the left */
+    margin-bottom: 0px; /* Retain this margin for spacing */
 }
 
-#contact-form label.error {
-    margin-top: 10px;
-    margin-bottom: 1em;
-    font-size: 12px;
-    line-height: 12px;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    color: #D33E43;
-    margin-left: 10px
-}
-
-#contact-form input[type="text"].error,
-#contact-form input[type="password"].error,
-#contact-form input[type="date"].error,
-#contact-form input[type="datetime"].error,
-#contact-form input[type="datetime-local"].error,
-#contact-form input[type="month"].error,
-#contact-form input[type="week"].error,
-#contact-form input[type="email"].error,
-#contact-form input[type="number"].error,
-#contact-form input[type="search"].error,
-#contact-form input[type="tel"].error,
-#contact-form input[type="time"].error,
-#contact-form input[type="url"].error,
-#contact-form textarea.error {
-    border-color: #D33E43
-}
-
-textarea {
-    resize: none;
-}
-
-fieldset {
-    border: 0px;
-    margin: 0;
-    padding: 0
-}
-
-.required {
-    color: #e9266d
-}
-
-#success,
-#error {
-    display: none
-}
-
-#success p,
-#error p {
-    display: block;
-}
-
-#success p {
-    color: #425BB5;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #425BB5;
-    margin-top: 10px;
-}
-
-#error p {
-    color: #D33E43;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #D33E43;
-    margin-top: 10px;
-}
-
-#submit {
-    background-color: #425BB5;
-    color: #fff;
-    padding: 10px 40px;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    width: 100%;
-}
-
-.social {
-    padding-left: 0;
-    list-style: none;
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 20px; /* Space between icons */
     margin-top: 20px;
 }
 
-.social li {
-    float: left;
+.social-icons a {
+    color: #333; /* Icon color */
+    font-size: 35px; /* Icon size */
+    transition: transform 0.3s, color 0.3s; /* Smooth transform and color transition */
 }
 
-.social li a {
-    color: #333;
-    font-size: 35px;
-    margin-right: 15px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+.social-icons a:hover {
+    color: #425BB5; /* Change color on hover */
+    transform: scale(1.2); /* Slightly increase size on hover */
 }
 
-.social li a:hover {
-    color: #425BB5;
+.footer-note {
+    margin-top: 40px;
+    text-align: left; /* Left align the footer note */
+}
+
+.footer-note p {
+    font-size: 14px; /* Smaller text size */
+    color: #555; /* Light gray color */
 }
 
 

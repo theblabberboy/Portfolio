@@ -1,14 +1,10 @@
 // JavaScript Document
 
-$(window).load(function () {
-    "use strict";
-    // makes sure the whole site is loaded
-    $('#status').fadeOut(); // will first fade out the loading animation
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({
-        'overflow': 'visible'
-    });
+window.addEventListener("load", function () {
+    // Hides the preloader after the page fully loads
+    document.getElementById("preloader").style.display = "none";
 });
+
 
 $(document).ready(function () {
     "use strict";
@@ -136,59 +132,24 @@ $(document).ready(function () {
         modalTarget: 'telepathy'
     });
 
-    // Contact Form 	
-    // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
+    $("#demo10").animatedModal({
+        modalTarget: 'poster_presentation'
     });
+
+    // Contact Form
+    $('#contact').hide().fadeIn(1000);
+
+    // Hover effect on social icons
+    $('.social-icons a').hover(
+        function() {
+            $(this).css('color', '#425BB5');
+            $(this).css('transform', 'scale(1.2)');
+        },
+        function() {
+            $(this).css('color', '#333');
+            $(this).css('transform', 'scale(1)');
+        }
+    );;
 
     // Collapsible functionality
     var coll = document.getElementsByClassName("collapsible");
@@ -228,5 +189,32 @@ $(document).ready(function () {
             $(event.target).css('display', 'none');
         }
     });
+
+
+    // Extracurricular
+    // Show the modal when an extracurricular link is clicked
+    $('.extracurricular-link').click(function(event) {
+        event.preventDefault();
+
+        // Get the modal target from the clicked link's href attribute
+        const targetModal = $(this).attr('href');
+
+        // Show the corresponding modal
+        $(targetModal).css('display', 'block');
+    });
+
+    // Close the modal when the close button is clicked
+    $('.close-extracurricularModal').click(function() {
+        // Find the closest modal and hide it
+        $(this).closest('.modal').css('display', 'none');
+    });
+
+    // Close the modal if clicking outside of the modal content
+    $(window).click(function(event) {
+        if ($(event.target).hasClass('modal')) {
+            $(event.target).css('display', 'none');
+        }
+    });
+
     
 });

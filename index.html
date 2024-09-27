@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Researcher, Designer & Finesse at work. ">
+    <meta property="og:title" content=https://github.com/theblabberboy/Portfolio/blob/51834c7cd2c2143d8ca480cb2ba69194f19e6505/img/logo.png />
+    <meta property="og:image" content="img/logo.png" />
     <title>Rupam's Website</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <!-- Bootstrap -->
@@ -12,6 +15,8 @@
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css">
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -44,7 +49,8 @@
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#experience">experience</a></li>
                 <li><a href="#projects">projects</a></li>
-                <li><a href="#awards">Awards</a></li>
+                <li><a href="#awards">Awards</a></li>                
+                <li><a href="#Extracurricular">Extracurricular</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
@@ -56,7 +62,7 @@
         <div class="container">
             <div class="disply-table">
                 <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-                    <h4>Rupam Kundu</h4>
+                    <h6>Rupam Kundu</h6>
                     <h1>Aspiring Astrophysicist</h1> </div>
             </div>
         </div>
@@ -167,29 +173,69 @@
             </div>
             <div class="skill-grid">
                 <div class="skill-card" data-aos="fade-up">
-                    <div class="skill-icon">💻</div>
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i> <!-- Programming icon -->
+                    </div>
                     <h3 class="skill-title">Programming</h3>
                     <p class="skill-description">Experienced with Python (Numpy, SciPy, Matplotlib, Pandas, Astropy, Plotly, emcee), LaTeX, MATLAB, Mathematica, TOPCAT, SAOImageDS9</p>
                 </div>
                 <div class="skill-card" data-aos="fade-up">
-                    <div class="skill-icon">📊</div>
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i> <!-- Data analysis icon -->
+                    </div>
                     <h3 class="skill-title">Astrophysical Data Analysis</h3>
                     <p class="skill-description">Spectroscopic data analysis, Handling low-resolution spectra, MCMC, Spectral Analysis, Optical Depth fitting, Noise reduction techniques</p>
                 </div>
                 <div class="skill-card" data-aos="fade-up">
-                    <div class="skill-icon">🌐</div>
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i> <!-- Language icon -->
+                    </div>
                     <h3 class="skill-title">Languages</h3>
                     <p class="skill-description">Bengali, Hindi, English (IELTS band score: 7)</p>
                 </div>
-                <div class="skill-card" data-aos="fade-up">
-                    <div class="skill-icon">🖼️</div>
+                <div class="skill-card" data-aos="fade-up" id="3d-modal-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i> <!-- 3D Modeling icon -->
+                    </div>
                     <h3 class="skill-title">3D Modeling</h3>
                     <p class="skill-description">Proficient in 3D modeling with DAZ</p>
+                    <br><br><br>
+                    <p style="color: rgb(241, 62, 62); cursor: pointer;">[Click to see more]</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- ./Skill Section -->
+
+    <!-- Modal Structure -->
+    <div id="3dModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>My 3D Modeling (Software: DAZ 3D)</h2>
+            <br>
+            <div class="image-grid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure>
+                            <a href="img/hobby/Cece_QHD.jpg" target="_blank">
+                                <img src="img/hobby/Cece_QHD.jpg" alt="Cece 1" class="hover-effect">
+                            </a>
+                            <figcaption>An imaginary pose of Cece from "Leap of Faith (Visual Novel)"</figcaption>
+                        </figure>
+                    </div>                                
+                    <div class="col-md-6">
+                        <figure>
+                            <a href="img/hobby/Cece_QHD_2nd_pose.jpg" target="_blank">
+                                <img src="img/hobby/Cece_QHD_2nd_pose.jpg" alt="Cece 2" class="hover-effect">
+                            </a>
+                            <figcaption>An imaginary pose of Cece from "Leap of Faith (Visual Novel)"</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./Modal Structure -->
 
 
 
@@ -198,7 +244,7 @@
     <div class="section" id="experience">
         <div class="container">
             <div class="col-md-12">
-                <h4>03</h4>
+                <h4>04</h4>
                 <h1 class="size-50">Research <br /> Experience</h1>
                 <div class="h-50"></div>
             </div>
@@ -231,7 +277,7 @@
                                 </a>
                             </div>
                             <a href="https://www.researchgate.net/publication/383974884_Physical_properties_and_composition_of_Dust_in_Protostellar_envelopes_insights_into_Star_and_Planet_formation"
-                             class="read-more-button">See More</a>
+                            target="_blank" class="read-more-button">See More</a>
                             
                         </div>
                     </li>
@@ -256,7 +302,7 @@
                                 </a>
                                 <br><br>
                                 <a href="https://www.researchgate.net/publication/384104486_AMUSING_ourselves_with_the_secrets_of_galaxies_using_Integral_Field_Spectroscopy?channel=doi&linkId=66eab2e9fc6cc464895e023d&showFulltext=true"
-                                 class="read-more-button">See More</a>
+                                target="_blank" class="read-more-button">See More</a>
                         </div>
                     </li>
                     <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
@@ -277,7 +323,7 @@
                                 <img src="img/short project and others/images/deconvolution.jpg" alt="Solar Imaging using Deconvolution" width="500">
                                 <p><em>(Image Source:</em> <a href="https://iopscience.iop.org/article/10.1088/1674-4527/20/11/170" target="_blank">IOPscience</a>)</p>
                                 <a href="https://www.researchgate.net/publication/383971763_Fourier_Image_Synthesis_and_Deconvolution_of_a_2-D_Simulated_Data_with_CLEAN_Algorithm"
-                                class="read-more-button">See More</a>
+                                target="_blank" class="read-more-button">See More</a>
                         </div>
                     </li>
                 </ul>
@@ -290,7 +336,7 @@
     <div class="section" id="projects">
         <div class="container">
             <div class="col-md-12">
-                <h4>04</h4>
+                <h4>05</h4>
                 <h1 class="size-50">Educational Projects, <br /> Presentations and Talks</h1> 
             </div>
             <!-- main container -->
@@ -952,13 +998,43 @@
         </div>
     </div>
 
+    <!--DEMO10-->
+    <div id="poster_presentation" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-poster_presentation close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Physical Properties and Composition of Dust in Protostellar Envelopes: Insights into Star and Planet Formation<br />
+                        <hr style="border: 1px solid #000; margin: 10px auto; width: 100%;">
+                        Poster Presentation (Master's Thesis Work)</h2>
+                        <div class="h-50"></div>
+                        <p>I got selected for a national conference <strong>Star Formation Studies in India (SF 2024)</strong>. I participated in the four-day conference
+                        held at the <strong>S.N. Bose National Centre for Basic Sciences (SNBNCBS)</strong>, where I presented my Master's thesis work (incomplete) 
+                        during a poster presentation session.</p>
+                        <br />
+                        <img src="img/short project and others/SN Bose Certificate.jpg" alt="Certificate of Participation from SN Bose National Centre for Basic Sciences" class="hover-effect">
+                        <br />
+                        <a href="https://www.researchgate.net/publication/383974884_Physical_properties_and_composition_of_Dust_in_Protostellar_envelopes_insights_into_Star_and_Planet_formation" target="_blank" class="btn-custom"
+                        style="padding: 10px 20px; background-color: #2363b7; color: #fff; text-decoration: none; border-radius: 5px;">
+                        Check out Poster
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
 
     <!-- Awards List -->
     <div class="section" id="awards">
         <div class="container">
             <div class="col-md-12">
-                <h4>05</h4>
+                <h4>06</h4>
                 <h1 class="size-50">Awards and Achievements</h1>
                 <div class="h-50"></div>
             </div>
@@ -1004,9 +1080,9 @@
                 <h1>Award for Excellent Encouragement (IAAC 2022)</h1>
             </div>
             <div class="modal-body">
-                <img src="img/short project and others/IAAC/certificate.jpg" alt="Best Encouragement Award Certificate"><br><br>
                 <p>Being selected as official Ambassador, this award was given for outstanding contributions in IAAC 2022.
                 Selected as one of the top 6 Ambassadors from all over the World.</p><br><br>
+                <img src="img/short project and others/IAAC/certificate.jpg" alt="Best Encouragement Award Certificate"><br><br>
                 <a href="https://iaac.space/en/announcement2022" target="_blank">
                     <img src="img/short project and others/IAAC/best_encouragement.png" alt="Among Top 6 from World">
                 </a>
@@ -1093,54 +1169,344 @@
     </div>
     
           
-
-
-    <!-- contact -->
-    <div class="section" id="contact">
+    <!-- Extracurricular Activities -->
+    <div class="section" id="Extracurricular">
         <div class="container">
             <div class="col-md-12">
-                <h4>05</h4>
-                <h1 class="size-50">Contact  Me</h1>
+                <h4>07</h4>
+                <h1 class="size-50">Extracurricular Activities</h1>
                 <div class="h-50"></div>
             </div>
-            <div class="col-md-4" data-aos="fade-up">
 
-                <h3>Phone Number</h3>
-                <p>+20 5555 569 42</p>
-                <h3> Mobile Numberr</h3>
-                <p>+20 5555 569 42</p>
-                <h3>Email</h3>
-                <p>mail@info.me </p>
-
-                <h3>Social Network</h3>
-
-                <ul class="social">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-                </ul>
-                <div class="clearfix"></div>
-                <div class="h-50"></div>
-            </div>
-            <div class="col-md-8" data-aos="fade-up">
-                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" />
-                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
-                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
-                    <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
-                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
-                    <div id="success">
-                        <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
-                    </div>
-                    <div id="error">
-                        <p> Something went wrong, try refreshing and submitting the form again. </p>
-                    </div>
-                </form>
+            <!-- Extracurricular Boxes -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#extracurricular1Modal" class="extracurricular-link">
+                        <div class="extracurricular-box" style="background-image: url('img/hobby/photography/me.jpeg');">
+                            <div class="overlay">
+                                <p class="extracurricular-title">My Photography</p> <!-- Removed the description -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="#extracurricular2Modal" class="extracurricular-link">
+                        <div class="extracurricular-box" style="background-image: url('img/hobby/Drawings/terabithia.jpg');">
+                            <div class="overlay">
+                                <p class="extracurricular-title">My Drawings</p> <!-- Removed the description -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="#extracurricular3Modal" class="extracurricular-link">
+                        <div class="extracurricular-box" style="background-image: url('img/hobby/karate/oi-zuki.jpeg');">
+                            <div class="overlay">
+                                <p class="extracurricular-title">Karate (Shotokan)</p> <!-- Removed the description -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- ./contact -->
+
+    <!-- Extracurricular 1 Modal -->
+    <div id="extracurricular1Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-extracurricularModal">&times;</span>
+            <div class="modal-header">
+                <h1>My Photography</h1>
+            </div>
+            <div class="image-grid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/1.jpg" target="_blank">
+                            <img src="img/hobby/photography/1.jpg" alt="Sun 1" class="hover-effect">
+                        </a>
+                    </div>                                
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/2.jpg" target="_blank">
+                            <img src="img/hobby/photography/2.jpg" alt="Sun 2" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/3.jpg" target="_blank">
+                            <img src="img/hobby/photography/3.jpg" alt="Sun 3" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/4.jpg" target="_blank">
+                            <img src="img/hobby/photography/4.jpg" alt="Eclipse" class="hover-effect">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">                    
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/5.jpg" target="_blank">
+                            <img src="img/hobby/photography/5.jpg" alt="Village 1" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/6.jpg" target="_blank">
+                            <img src="img/hobby/photography/6.jpg" alt="Moon" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/7.jpg" target="_blank">
+                            <img src="img/hobby/photography/7.jpg" alt="Gopalpur Seabeach 1" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/8.jpg" target="_blank">
+                            <img src="img/hobby/photography/8.jpg" alt="TIFR 1" class="hover-effect">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/9.jpg" target="_blank">
+                            <img src="img/hobby/photography/9.jpg" alt="TIFR 2" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/10.jpg" target="_blank">
+                            <img src="img/hobby/photography/10.jpg" alt="TIFR 3" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/11.jpg" target="_blank">
+                            <img src="img/hobby/photography/11.jpg" alt="TIFR 4" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/12.jpg" target="_blank">
+                            <img src="img/hobby/photography/12.jpg" alt="TIFR 5" class="hover-effect">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/13.jpg" target="_blank">
+                            <img src="img/hobby/photography/13.jpg" alt="CSMT" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/14.jpg" target="_blank">
+                            <img src="img/hobby/photography/14.jpg" alt="TIFR 6" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/15.jpg" target="_blank">
+                            <img src="img/hobby/photography/15.jpg" alt="TIFR 7" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/16.jpg" target="_blank">
+                            <img src="img/hobby/photography/16.jpg" alt="Gopalpur Seabeach 2" class="hover-effect">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/17.jpg" target="_blank">
+                            <img src="img/hobby/photography/17.jpg" alt="TIFR 8" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/18.jpg" target="_blank">
+                            <img src="img/hobby/photography/18.jpg" alt="Village 2" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/19.jpg" target="_blank">
+                            <img src="img/hobby/photography/19.jpg" alt="Gateway of India" class="hover-effect">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/hobby/photography/20.jpg" target="_blank">
+                            <img src="img/hobby/photography/20.jpg" alt="TIFR 9" class="hover-effect">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Extracurricular 2 Modal -->
+    <div id="extracurricular2Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-extracurricularModal">&times;</span>
+            <div class="modal-header">
+                <h1>My Drawings</h1>
+            </div>
+            <div class="image-grid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/Alice-01.jpeg" target="_blank">
+                                <img src="img/hobby/Drawings/Alice-01.jpeg" alt="Alice-01" class="hover-effect">
+                            </a>
+                            <figcaption>Alice Cullen from "The Twilight Saga"</figcaption>
+                        </figure>
+                    </div>                             
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/Alice-02.jpg" target="_blank">
+                                <img src="img/hobby/Drawings/Alice-02.jpg" alt="Alice-02" class="hover-effect">
+                            </a>
+                            <figcaption>Alice Cullen from "The Twilight Saga"</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/Darling in the Franxx.jpeg" target="_blank">
+                                <img src="img/hobby/Drawings/Darling in the Franxx.jpeg" alt="Darling in the Franxx" class="hover-effect">
+                            </a>
+                            <figcaption>Hiro and 02 from the "Darling in the Franxx" anime</figcaption>
+                        </figure>
+                    </div> 
+                </div>
+
+                <div class="row">                   
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/terabithia.jpg" target="_blank">
+                                <img src="img/hobby/Drawings/terabithia.jpg" alt="Terabithia" class="hover-effect">
+                            </a>
+                            <figcaption>An imagination of Terabithia (movie: "Bridge to Terabithia")</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/Tom Holland.jpg" target="_blank">
+                                <img src="img/hobby/Drawings/Tom Holland.jpg" alt="Tom Holland" class="hover-effect">
+                            </a>
+                            <figcaption>Tom Holland</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="img/hobby/Drawings/Dehya Genshin.JPG" target="_blank">
+                                <img src="img/hobby/Drawings/Dehya Genshin.JPG" alt="Dehya Genshin" class="hover-effect">
+                            </a>
+                            <figcaption>Dehya from Genshin Impact</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <figure>
+                            <a href="img/hobby/Drawings/Garden of Words.jpeg" target="_blank">
+                                <img src="img/hobby/Drawings/Garden of Words.jpeg" alt="Garden of Words" class="hover-effect">
+                            </a>
+                            <figcaption>The Garden from the anime "Garden of Words"</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Extracurricular 3 Modal -->
+    <div id="extracurricular3Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-extracurricularModal">&times;</span>
+            <div class="modal-header">
+                <h1>Karate (Style: Shotokan-Ryu, Belt: Yellow)</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/8th kyu certificate.jpg" target="_blank">
+                            <img src="img/hobby/karate/8th kyu certificate.jpg" alt="8th kyu certificate" class="hover-effect">
+                        </a>
+                        <figcaption>8th kyu passing certificate</figcaption>
+                    </figure>
+                </div>                             
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/7th kyu certificate.jpg kyu certificate.jpg" target="_blank">
+                            <img src="img/hobby/karate/7th kyu certificate.jpg" alt="7th kyu certificate" class="hover-effect">
+                        </a>
+                        <figcaption>7th kyu passing certificate</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/sensei.jpeg" target="_blank">
+                            <img src="img/hobby/karate/sensei.jpeg" alt="Darling in the Franxx" class="hover-effect">
+                        </a>
+                        <figcaption>Receiving certificate from Sensei Sk Ismile</figcaption>
+                    </figure>
+                </div> 
+            </div>
+
+            <div class="row">                   
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/age-uke.jpeg" target="_blank">
+                            <img src="img/hobby/karate/age-uke.jpeg" alt="Age Uke" class="hover-effect">
+                        </a>
+                        <figcaption>Stance: Age Uke</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/kiba dachi.jpeg" target="_blank">
+                            <img src="img/hobby/karate/kiba dachi.jpeg" alt="Kiba Dachi" class="hover-effect">
+                        </a>
+                        <figcaption>Stance: Kiba Dachi</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a href="img/hobby/karate/oi-zuki.jpeg" target="_blank">
+                            <img src="img/hobby/karate/oi-zuki.jpeg" alt="Oi Zuki" class="hover-effect">
+                        </a>
+                        <figcaption>Stance: Oi Zuki</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>08</h4>
+                <h1 class="size-50">Contact Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="social-icons">
+                    <a href="mailto:rupam.astro@gmail.com" title="Email"><i class="ion-email"></i></a>
+                    <a href="https://www.instagram.com/rupam5303" title="Instagram" target="_blank"><i class="ion-social-instagram"></i></a>
+                    <a href="https://github.com/theblabberboy" title="GitHub" target="_blank"><i class="ion-social-github"></i></a>
+                    <a href="https://www.researchgate.net/profile/Rupam-Kundu-3" title="ResearchGate" target="_blank"><i class="ion-social-researchgate"></i></a>
+                    <a href="https://x.com/RupamKu08700495?s=09" title="Twitter" target="_blank"><i class="ion-social-twitter"></i></a>
+                    <a href="https://in.linkedin.com/in/rupam-kundu-678092228" title="LinkedIn" target="_blank"><i class="ion-social-linkedin"></i></a>
+                    <a href="https://www.facebook.com/rupam.kundu.1460/" title="Facebook" target="_blank"><i class="ion-social-facebook"></i></a>
+                </div>
+            </div>
+            <div class="col-md-12 footer-note">
+                <p>&copy; 2024 Rupam. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
 
 
     </div>
