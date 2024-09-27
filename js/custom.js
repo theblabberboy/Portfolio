@@ -1,9 +1,10 @@
 // JavaScript Document
 
-//window.addEventListener("load", function () {
+window.addEventListener("load", function () {
     // Hides the preloader after the page fully loads
-//    document.getElementById("preloader").style.display = "none";
-//});
+    document.getElementById("preloader").style.display = "none";
+});
+
 
 
 $(document).ready(function () {
@@ -195,15 +196,24 @@ $(document).ready(function () {
 
     // Award and Achievement
     // Show the modal when an award link is clicked
+    // Inside your modal click event
     $('.award-link').click(function(event) {
         event.preventDefault();
-
+        
         // Get the modal target from the clicked link's href attribute
         const targetModal = $(this).attr('href');
-
+        
         // Show the corresponding modal
         $(targetModal).css('display', 'block');
+        
+        // Load the PDF only if it hasn't been loaded yet
+        const pdfEmbed = $(targetModal).find('embed');
+        if (!pdfEmbed.attr('src')) {
+            pdfEmbed.attr('src', pdfEmbed.data('src'));
+        }
     });
+    
+
 
     // Close the modal when the close button is clicked
     $('.close-awardModal').click(function() {
