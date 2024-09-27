@@ -15,6 +15,9 @@ $(document).ready(function () {
         nav = $('.navbar-fixed-top,footer'),
         nav_height = nav.outerHeight();
 
+    // Scrolling navigation visibility
+    let lastScrollTop = 0;
+
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
@@ -30,6 +33,16 @@ $(document).ready(function () {
                 nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
             }
         });
+
+        // Manage header visibility
+        if (cur_pos > lastScrollTop) {
+            // Scrolling down
+            nav.css('top', '-80px'); // Adjust based on header height
+        } else {
+            // Scrolling up
+            nav.css('top', '0');
+        }
+        lastScrollTop = cur_pos <= 0 ? 0 : cur_pos; // For Mobile or negative scrolling
     });
 
     nav.find('a').on('click', function () {
